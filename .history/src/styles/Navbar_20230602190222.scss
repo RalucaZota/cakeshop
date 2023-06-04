@@ -1,0 +1,92 @@
+header{
+    width: 100%;
+    position: fixed;
+    transition: 0.5s ease all;
+    background-color: gray;
+    z-index: 99;
+    color: white;
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: row;
+        background-color: pink;
+        transition: 0.5s ease all;
+        padding: 12px 0;
+        width: 90%;
+        margin: 0 auto;
+        text-decoration: none;
+        position: relative;
+
+
+        @media (min-width: 1140px) {
+            max-width: 1140px;
+        }
+        ul,
+        .link {
+            font-weight: 500;
+            color: blue;
+            list-style: none;
+            text-decoration: none;
+        }
+        li {
+            text-transform: uppercase;
+            padding: 16px;
+            margin-left: 16px;
+        }
+        
+        .link {
+            font-size: 14px;
+            transition: 0.5s ease all;
+            padding-bottom: 4px;
+            border-bottom:  1px solid transparent;
+            &:hover {
+                color: aquamarine;
+                border-color: purple;
+            }
+        }
+        .branding {
+            display: flex;
+            align-items: center;
+
+            // img {
+            //     width: 50px;
+            //     transition: .5s ease all;
+            // }
+        }
+   
+        .active{
+        font-weight: bold;
+        color: yellowgreen;
+        font-weight: 600;
+        text-decoration: none;
+        font-size: larger;
+        }
+        .cart{
+        // position: absolute;
+        // right: 5%;
+    }
+    .navigation {
+        display: flex;
+        align-items: center;
+        flex: 1;
+    }
+    .icon{
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 24px;
+        height: 100%;
+        i{
+            cursor: pointer;
+            font-size: 24px;
+            transition: .8s ease all;
+        }   
+    }
+    .icon-active{
+        transform: rotate(180deg);
+    }
+
+}
+}

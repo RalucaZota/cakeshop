@@ -1,0 +1,23 @@
+.nav-routes {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: grey;
+    min-width:auto;
+    .active{
+        font-weight: bold;
+        color: green;
+        font-weight: 600;
+        text-decoration: none;
+        font-size: larger;
+}
+    .nav-elements{
+        text-decoration: none;
+        font-size: 25px;
+        color: black;
+        } 
+    .cart{
+    position: absolute;
+    right: 20%;
+    }
+}
