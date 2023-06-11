@@ -1,0 +1,105 @@
+
+  {
+     "desserts": [
+    {
+      "id": 1,
+      "name": "Red Velvet Cake",
+      "price": "5$",
+      "image": "/assets/images/cakes/rawveganchocolatecake.jpg",
+      "quantity": 1,
+      "description": "A classic Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cream.",
+      "ingredients": ["Ladyfingers", "Mascarpone cheese", "Espresso", "Cocoa powder"]
+    },
+    {
+      "id": 2,
+      "name": "Cheesecake",
+      "price": "5$",
+      "image": "cheesecake.jpg",
+      "quantity": 1,
+      "description": "A rich and creamy dessert with a graham cracker crust, topped with your favorite fruit sauce.",
+      "ingredients": ["Cream cheese", "Graham crackers", "Butter", "Sugar"]
+    },
+    {
+      "id": 20,
+      "name": "Chocolate Brownie",
+      "price": "5$",
+      "image": "brownie.jpg",
+      "quantity": 1,
+      "description": "A dense and fudgy chocolate dessert, perfect for chocolate lovers.",
+      "ingredients": ["Chocolate", "Butter", "Sugar", "Flour", "Eggs"]
+    },
+    {
+      "id": 20,
+      "name": "Chocolate Brownie",
+      "price": "5$",
+      "image": "brownie.jpg",
+      "quantity": 1,
+      "description": "A dense and fudgy chocolate dessert, perfect for chocolate lovers.",
+      "ingredients": ["Chocolate", "Butter", "Sugar", "Flour", "Eggs"]
+    },
+    {
+      "id": 1,
+      "name": "Tiramisu",
+      "price": "5$",
+      "image": "tiramisu.jpg",
+      "quantity": 1,
+      "description": "A classic Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cream.",
+      "ingredients": ["Ladyfingers", "Mascarpone cheese", "Espresso", "Cocoa powder"]
+    },
+    {
+      "id": 20,
+      "name": "Chocolate Brownie",
+      "price": "5$",
+      "image": "brownie.jpg",
+      "quantity": 1,
+      "description": "A dense and fudgy chocolate dessert, perfect for chocolate lovers.",
+      "ingredients": ["Chocolate", "Butter", "Sugar", "Flour", "Eggs"]
+    },
+    {
+      "id": 20,
+      "name": "Chocolate Brownie",
+      "price": "5$",
+      "image": "brownie.jpg",
+      "quantity": 1,
+      "description": "A dense and fudgy chocolate dessert, perfect for chocolate lovers.",
+      "ingredients": ["Chocolate", "Butter", "Sugar", "Flour", "Eggs"]
+    },
+    {
+      "id": 20,
+      "name": "Chocolate Brownie",
+      "price": "5$",
+      "image": "brownie.jpg",
+      "quantity": 1,
+      "description": "A dense and fudgy chocolate dessert, perfect for chocolate lovers.",
+      "ingredients": ["Chocolate", "Butter", "Sugar", "Flour", "Eggs"]
+    },
+    {
+      "id": 20,
+      "name": "Chocolate Brownie",
+      "price": "5$",
+      "image": "brownie.jpg",
+      "quantity": 1,
+      "description": "A dense and fudgy chocolate dessert, perfect for chocolate lovers.",
+      "ingredients": ["Chocolate", "Butter", "Sugar", "Flour", "Eggs"]
+    },
+    {
+      "id": 20,
+      "name": "Chocolate Brownie",
+      "price": "5$",
+      "image": "brownie.jpg",
+      "quantity": 1,
+      "description": "A dense and fudgy chocolate dessert, perfect for chocolate lovers.",
+      "ingredients": ["Chocolate", "Butter", "Sugar", "Flour", "Eggs"]
+    },
+    {
+      "id": 20,
+      "name": "Chocolate Brownie",
+      "price": "5$",
+      "image": "brownie.jpg",
+      "quantity": 1,
+      "description": "A dense and fudgy chocolate dessert, perfect for chocolate lovers.",
+      "ingredients": ["Chocolate", "Butter", "Sugar", "Flour", "Eggs"]
+    },
+  ]
+}
+

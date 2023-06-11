@@ -1,0 +1,232 @@
+
+  {
+     "desserts": [
+    {
+      "id": 1,
+      "name": "Raw Vegan Cake",
+      "price": "5$",
+      "image": "/rawveganchocolatecake.jpg",
+      "quantity": 1,
+      "description": "A classic Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cream.",
+      "ingredients": ["Ladyfingers", "Mascarpone cheese", "Espresso", "Cocoa powder"]
+    },
+    {
+      "id": 2,
+      "name": "Red Velvet Cake",
+      "price": "5$",
+      "image": "/cakes/brownie.jpg",
+      "quantity": 1,
+      "description": "A rich and creamy dessert with a graham cracker crust, topped with your favorite fruit sauce.",
+      "ingredients": ["Cream cheese", "Graham crackers", "Butter", "Sugar"]
+    },
+    {
+      "id": 3,
+      "name": "Oreo Icecream",
+      "price": "5$",
+      "image": "brownie.jpg",
+      "quantity": 1,
+      "description": "A dense and fudgy chocolate dessert, perfect for chocolate lovers.",
+      "ingredients": ["Chocolate", "Butter", "Sugar", "Flour", "Eggs"]
+    },
+    {
+      "id": 4,
+      "name": "Rain Forest Cake",
+      "price": "5$",
+      "image": "brownie.jpg",
+      "quantity": 1,
+      "description": "A dense and fudgy chocolate dessert, perfect for chocolate lovers.",
+      "ingredients": ["Chocolate", "Butter", "Sugar", "Flour", "Eggs"]
+    },
+    {
+      "id": 5,
+      "name": "Chocolate covered Waffles",
+      "price": "5$",
+      "image": "tiramisu.jpg",
+      "quantity": 1,
+      "description": "A classic Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cream.",
+      "ingredients": ["Ladyfingers", "Mascarpone cheese", "Espresso", "Cocoa powder"]
+    },
+    {
+      "id": 6,
+      "name": "Birthday Cake",
+      "price": "5$",
+      "image": "brownie.jpg",
+      "quantity": 1,
+      "description": "A dense and fudgy chocolate dessert, perfect for chocolate lovers.",
+      "ingredients": ["Chocolate", "Butter", "Sugar", "Flour", "Eggs"]
+    },
+    {
+      "id": 7,
+      "name": "Cake with butter cream and chocolate",
+      "price": "5$",
+      "image": "brownie.jpg",
+      "quantity": 1,
+      "description": "A dense and fudgy chocolate dessert, perfect for chocolate lovers.",
+      "ingredients": ["Chocolate", "Butter", "Sugar", "Flour", "Eggs"]
+    },
+    {
+      "id": 8,
+      "name": "ForestFruit Icecream",
+      "price": "5$",
+      "image": "brownie.jpg",
+      "quantity": 1,
+      "description": "A dense and fudgy chocolate dessert, perfect for chocolate lovers.",
+      "ingredients": ["Chocolate", "Butter", "Sugar", "Flour", "Eggs"]
+    },
+    {
+      "id": 9,
+      "name": "Marzipan Cream Cake",
+      "price": "5$",
+      "image": "brownie.jpg",
+      "quantity": 1,
+      "description": "A dense and fudgy chocolate dessert, perfect for chocolate lovers.",
+      "ingredients": ["Chocolate", "Butter", "Sugar", "Flour", "Eggs"]
+    },
+    {
+      "id": 10,
+      "name": "Melon Cake",
+      "price": "5$",
+      "image": "brownie.jpg",
+      "quantity": 1,
+      "description": "A dense and fudgy chocolate dessert, perfect for chocolate lovers.",
+      "ingredients": ["Chocolate", "Butter", "Sugar", "Flour", "Eggs"]
+    },
+    {
+      "id": 11,
+      "name": "Cake with caramelized topper and milk cream",
+      "price": "5$",
+      "image": "brownie.jpg",
+      "quantity": 1,
+      "description": "A dense and fudgy chocolate dessert, perfect for chocolate lovers.",
+      "ingredients": ["Chocolate", "Butter", "Sugar", "Flour", "Eggs"]
+    },
+    {
+      "id": 12,
+      "name": "Cake with caramelized topper and milk cream",
+      "price": "5$",
+      "image": "brownie.jpg",
+      "quantity": 1,
+      "description": "A dense and fudgy chocolate dessert, perfect for chocolate lovers.",
+      "ingredients": ["Chocolate", "Butter", "Sugar", "Flour", "Eggs"]
+    },
+    {
+      "id": 13,
+      "name": "Chocolate cake",
+      "price": "5$",
+      "image": "brownie.jpg",
+      "quantity": 1,
+      "description": "A dense and fudgy chocolate dessert, perfect for chocolate lovers.",
+      "ingredients": ["Chocolate", "Butter", "Sugar", "Flour", "Eggs"]
+    },
+    {
+      "id": 14,
+      "name": "Cake with butter cream and chocolate",
+      "price": "5$",
+      "image": "brownie.jpg",
+      "quantity": 1,
+      "description": "A dense and fudgy chocolate dessert, perfect for chocolate lovers.",
+      "ingredients": ["Chocolate", "Butter", "Sugar", "Flour", "Eggs"]
+    },    
+    {
+      "id": 15,
+      "name": "Brownie",
+      "price": "5$",
+      "image": "brownie.jpg",
+      "quantity": 1,
+      "description": "A dense and fudgy chocolate dessert, perfect for chocolate lovers.",
+      "ingredients": ["Chocolate", "Butter", "Sugar", "Flour", "Eggs"]
+    },
+    {
+      "id": 16,
+      "name": "Passion fruit icecream",
+      "price": "5$",
+      "image": "brownie.jpg",
+      "quantity": 1,
+      "description": "A dense and fudgy chocolate dessert, perfect for chocolate lovers.",
+      "ingredients": ["Chocolate", "Butter", "Sugar", "Flour", "Eggs"]
+    },
+    {
+      "id": 17,
+      "name": "Rasperry macaroon",
+      "price": "5$",
+      "image": "brownie.jpg",
+      "quantity": 1,
+      "description": "A dense and fudgy chocolate dessert, perfect for chocolate lovers.",
+      "ingredients": ["Chocolate", "Butter", "Sugar", "Flour", "Eggs"]
+    },
+    {
+      "id": 18,
+      "name": "Straberry cake",
+      "price": "5$",
+      "image": "brownie.jpg",
+      "quantity": 1,
+      "description": "A dense and fudgy chocolate dessert, perfect for chocolate lovers.",
+      "ingredients": ["Chocolate", "Butter", "Sugar", "Flour", "Eggs"]
+    },
+    {
+      "id": 19,
+      "name": "Tarts with butter and fruits",
+      "price": "5$",
+      "image": "brownie.jpg",
+      "quantity": 1,
+      "description": "A dense and fudgy chocolate dessert, perfect for chocolate lovers.",
+      "ingredients": ["Chocolate", "Butter", "Sugar", "Flour", "Eggs"]
+    },
+    {
+      "id": 20,
+      "name": "Snickers icecream",
+      "price": "5$",
+      "image": "brownie.jpg",
+      "quantity": 1,
+      "description": "A dense and fudgy chocolate dessert, perfect for chocolate lovers.",
+      "ingredients": ["Chocolate", "Butter", "Sugar", "Flour", "Eggs"]
+    },
+    {
+      "id": 21,
+      "name": "Red velvet cupcake",
+      "price": "5$",
+      "image": "brownie.jpg",
+      "quantity": 1,
+      "description": "A dense and fudgy chocolate dessert, perfect for chocolate lovers.",
+      "ingredients": ["Chocolate", "Butter", "Sugar", "Flour", "Eggs"]
+    },
+    {
+      "id": 22,
+      "name": "A little bit of cupcake",
+      "price": "5$",
+      "image": "brownie.jpg",
+      "quantity": 1,
+      "description": "A dense and fudgy chocolate dessert, perfect for chocolate lovers.",
+      "ingredients": ["Chocolate", "Butter", "Sugar", "Flour", "Eggs"]
+    },
+    {
+      "id": 23,
+      "name": "Meringue cupcake",
+      "price": "5$",
+      "image": "brownie.jpg",
+      "quantity": 1,
+      "description": "A dense and fudgy chocolate dessert, perfect for chocolate lovers.",
+      "ingredients": ["Chocolate", "Butter", "Sugar", "Flour", "Eggs"]
+    },
+    {
+      "id": 24,
+      "name": "Misletoe cupcake",
+      "price": "5$",
+      "image": "brownie.jpg",
+      "quantity": 1,
+      "description": "A dense and fudgy chocolate dessert, perfect for chocolate lovers.",
+      "ingredients": ["Chocolate", "Butter", "Sugar", "Flour", "Eggs"]
+    },
+    {
+      "id": 25,
+      "name": "Peony flowers cupcake",
+      "price": "5$",
+      "image": "brownie.jpg",
+      "quantity": 1,
+      "description": "A dense and fudgy chocolate dessert, perfect for chocolate lovers.",
+      "ingredients": ["Chocolate", "Butter", "Sugar", "Flour", "Eggs"]
+    }
+
+  ]
+}
+
