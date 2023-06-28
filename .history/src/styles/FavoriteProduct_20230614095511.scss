@@ -1,0 +1,79 @@
+
+.favorite-product{
+    background-color: transparent;
+    border-radius: 8px;
+    // border: 5px solid  grey;
+    max-width: 245px;
+    height: 380px;
+    padding: 10px;
+    margin: 5px;
+    -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 25px 9px -12px rgba(0,0,0,0.2); 
+    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 25px 9px -12px rgba(0,0,0,0.2);
+    .product-image-div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 5px;
+        padding: 5px;
+        width: 220px;
+        border-radius: 8px;
+        border: 8px solid pink;
+        box-shadow: 15px 10px 5px 0px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 15px 10px 5px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 15px 10px 5px 0px rgba(0,0,0,0.75);
+
+        --mask: 
+        linear-gradient(#000 0 0) 50%/calc(100% - 22.20px) calc(100% - 22.20px) no-repeat,
+        radial-gradient(farthest-side,#000 98%,#0000) 0 0/24px 24px round;
+      -webkit-mask: var(--mask);
+              mask: var(--mask);
+    
+        .product-image{
+            width: 215px;
+            height: 250px;
+            border-radius: 8px;
+            --mask: 
+            linear-gradient(#000 0 0) 50%/calc(100% - 14.80px) calc(100% - 14.80px) no-repeat,
+            radial-gradient(farthest-side,#000 98%,#0000) 0 0/16px 16px round;
+          -webkit-mask: var(--mask);
+                  mask: var(--mask);
+        }
+            }
+        
+    .details-section{
+    //     --mask: 
+    //     linear-gradient(#000 0 0) 50%/calc(100% - 14.80px) calc(100% - 14.80px) no-repeat,
+    //     radial-gradient(farthest-side,#000 98%,#0000) 0 0/16px 16px round;
+    //   -webkit-mask: var(--mask);
+    //           mask: var(--mask);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        // background-color: whitesmoke;
+        border-radius: 8px;
+        padding: 5px;
+        height: 85px;
+    
+        .product-title{
+            font-weight: 800;
+            border-bottom:  2px solid transparent;
+            transition: 0.5s ease-in;
+            color: purple;
+            &:hover{
+                border-bottom: 2px solid red;
+                border-radius: 2px;
+                font-size: 20px;
+                }
+            }
+        
+            .product-price{
+                color: black;
+                font-weight: 600;
+        }
+    
+    }
+
+}
+
+

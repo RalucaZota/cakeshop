@@ -1,0 +1,16 @@
+.big-comment-box{
+    width: 500px;
+    height: 250px;
+    border: 2px solid red;
+    position: relative;
+    .little-comment-box{
+        width: 50px;
+        height: 50px;
+        border: 2px solid blue;
+        position: absolute;
+        bottom: -10%;
+        left: 50%;
+
+    }
+
+}

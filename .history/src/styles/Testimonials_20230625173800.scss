@@ -1,0 +1,32 @@
+.carousel {
+  .carousel__slide {
+    .carousel-item {
+      transition: ease all;
+      background-color: #cba3d3;
+      opacity: 0.5;
+      max-width: 300px;
+      height: 280px;
+ 
+      .images-wrapper {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        opacity: 0.9;
+      
+        .client-img {
+          border-radius: 50px;
+          width: 80px;
+          height: 100px;
+          margin: 10px 0;
+          opacity: 0.9;
+
+        }
+        .details-img {
+          max-width: 100px;
+          max-height: 40px;
+        }
+      }
+    }
+  }
+}
