@@ -1,0 +1,46 @@
+.product-article {
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-direction: row;
+    .product-img {
+        width: 450px;
+        height: 450px;
+        border-radius: 10px;
+        border: 20px solid palevioletred;
+    }
+
+    .product-details {
+        height: 400px;
+        display: flex;
+        gap: 10px;
+        max-width: 800px;
+        flex-direction: column;
+        & h3 {
+            font-size: 2rem;
+            font-family: cursive;
+        }
+        .product-details .star-raiting {
+            width: 12rem;
+            height: 2rem;
+        }
+
+        .product-details > p {
+            font-size: 1.5rem;
+        }
+        .product-details div.quantity-div {
+            display: flex;
+            justify-content: flex-start;
+            gap: 10px;
+            align-items: center;
+        }
+        .product-details div.quantity-div input {
+            border: 2px solid pink;
+            border-radius: 5px;
+            max-width: 100px;
+            height: 40px;
+        }
+    }
+}

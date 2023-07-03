@@ -1,0 +1,283 @@
+
+  {
+     "desserts": [
+    {
+      "id": 1,
+      "name": "Raw Vegan Cake",
+      "price": "8$",
+      "image": "./src/assets/images/cakes/rawveganchocolatecake.jpg",
+      "quantity": 1,
+      "description": "A classic Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cream.",
+      "ingredients": "Ladyfingers, Mascarpone cheese, Espresso, Cocoa powder",
+      "category": "cake"
+    },
+    {
+      "id": 2,
+      "name": "Red Velvet Cake",
+      "price": "9$",
+      "image": "./src/assets/images/cakes/redvelvetcake.jpg",
+      "quantity": 1,
+      "description": "A rich and creamy dessert with a graham cracker crust, topped with your favorite fruit sauce.",
+      "ingredients": "Cream cheese, Graham crackers, Butter, Sugar"
+    },
+    {
+      "id": 3,
+      "name": "Oreo Icecream",
+      "price": "6$",
+      "image": "./src/assets/images/cakes/oreoicecream.jpg",
+      "quantity": 1,
+      "description": "A dense and fudgy chocolate dessert, perfect for chocolate lovers.",
+      "ingredients": "Chocolate, Butter, Sugar, Flour, Eggs"
+    },
+    {
+      "id": 4,
+      "name": "Rain Forest Cake",
+      "price": "6$",
+      "image": "./src/assets/images/cakes/rainforestcake.jpg",
+      "quantity": 1,
+      "description": "A dense and fudgy chocolate dessert, perfect for chocolate lovers.",
+      "ingredients": "Chocolate, Butter, Sugar, Flour, Eggs"
+    },
+    {
+      "id": 5,
+      "name": "Chocolate covered Waffles",
+      "price": "5$",
+      "image": "./src/assets/images/cakes/chocolate-covered-waffles.jpg",
+      "quantity": 1,
+      "description": "A classic Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cream.",
+      "ingredients": "Chocolate, Butter, Sugar, Flour, Eggs"
+    },
+    {
+      "id": 6,
+      "name": "Birthday Cake",
+      "price": "5$",
+      "image": "./src/assets/images/cakes/birthday-cake.jpg",
+      "quantity": 1,
+      "description": "A dense and fudgy chocolate dessert, perfect for chocolate lovers.",
+      "ingredients": "Chocolate, Butter, Sugar, Flour, Eggs"
+    },
+    {
+      "id": 7,
+      "name": "Cake with butter cream & chocolate",
+      "price": "5$",
+      "image": "./src/assets/images/cakes/cakewithbuttercream--img2.jpg",
+      "quantity": 1,
+      "description": "A dense and fudgy chocolate dessert, perfect for chocolate lovers.",
+      "ingredients": "Chocolate, Butter, Sugar, Flour, Eggs"
+    },
+    {
+      "id": 8,
+      "name": "ForestFruit Icecream",
+      "price": "5$",
+      "image": "./src/assets/images/cakes/forestfruiticecream.jpg",
+      "quantity": 1,
+      "description": "A dense and fudgy chocolate dessert, perfect for chocolate lovers.",
+      "ingredients": "Chocolate, Butter, Sugar, Flour, Eggs"
+    },
+    {
+      "id": 9,
+      "name": "Marzipan Cream Cake",
+      "price": "5$",
+      "image": "./src/assets/images/cakes/marzipancream.jpg",
+      "quantity": 1,
+      "description": "A dense and fudgy chocolate dessert, perfect for chocolate lovers.",
+      "ingredients": "Chocolate, Butter, Sugar, Flour, Eggs"
+    },
+    {
+      "id": 10,
+      "name": "Melon Cake",
+      "price": "5$",
+      "image": "./src/assets/images/cakes/melon.jpg",
+      "quantity": 1,
+      "description": "A dense and fudgy chocolate dessert, perfect for chocolate lovers.",
+      "ingredients": "Chocolate, Butter, Sugar, Flour, Eggs"
+    },
+    {
+      "id": 11,
+      "name": "Raspberry macaroon",
+      "price": "5$",
+      "image": "./src/assets/images/cakes/Raspberrymacaroon.jpg",
+      "quantity": 1,
+      "description": "A dense and fudgy chocolate dessert, perfect for chocolate lovers.",
+      "ingredients": "Chocolate, Butter, Sugar, Flour, Eggs"
+    },
+    {
+      "id": 12,
+      "name": "Cake with caramelized topper and milk cream",
+      "price": "5$",
+      "image": "./src/assets/images/cakes/caramelizedtopper.jpg",
+      "quantity": 1,
+      "description": "A dense and fudgy chocolate dessert, perfect for chocolate lovers.",
+      "ingredients": "Chocolate, Butter, Sugar, Flour, Eggs"
+    },
+    {
+      "id": 13,
+      "name": "Chocolate cake",
+      "price": "5$",
+      "image": "./src/assets/images/cakes/chocolatecake.jpg",
+      "quantity": 1,
+      "description": "A dense and fudgy chocolate dessert, perfect for chocolate lovers.",
+      "ingredients": "Chocolate, Butter, Sugar, Flour, Eggs"
+    },
+    {
+      "id": 14,
+      "name": "Brownie",
+      "price": "5$",
+      "image": "./src/assets/images/cakes/brownie.jpg",
+      "quantity": 1,
+      "description": "A dense and fudgy chocolate dessert, perfect for chocolate lovers.",
+      "ingredients": "Chocolate, Butter, Sugar, Flour, Eggs"
+    },    
+    {
+      "id": 15,
+      "name": "Fruit tart",
+      "price": "5$",
+      "image": "./src/assets/images/cakes/fruittart.jpg",
+      "quantity": 1,
+      "description": "A dense and fudgy chocolate dessert, perfect for chocolate lovers.",
+      "ingredients": "Chocolate, Butter, Sugar, Flour, Eggs"
+    },
+    {
+      "id": 16,
+      "name": "Passion fruit icecream",
+      "price": "5$",
+      "image": "./src/assets/images/cakes/passionfruiticecream.jpg",
+      "quantity": 1,
+      "description": "A dense and fudgy chocolate dessert, perfect for chocolate lovers.",
+      "ingredients": "Chocolate, Butter, Sugar, Flour, Eggs"
+    },
+    {
+      "id": 17,
+      "name": "Snickers icecream",
+      "price": "5$",
+      "image": "./src/assets/images/cakes/snickersicecream.jpg",
+      "quantity": 1,
+      "description": "A dense and fudgy chocolate dessert, perfect for chocolate lovers.",
+      "ingredients": "Chocolate, Butter, Sugar, Flour, Eggs"
+    },
+    {
+      "id": 18,
+      "name": "Straberry cake",
+      "price": "5$",
+      "image": "./src/assets/images/cakes/strawberrycake.jpg",
+      "quantity": 1,
+      "description": "A dense and fudgy chocolate dessert, perfect for chocolate lovers.",
+      "ingredients": "Chocolate, Butter, Sugar, Flour, Eggs"
+    },
+    {
+      "id": 19,
+      "name": "Tarts with butter & fruits",
+      "price": "5$",
+      "image": "./src/assets/images/cakes/tartsbutterfruits.jpg",
+      "quantity": 1,
+      "description": "A dense and fudgy chocolate dessert, perfect for chocolate lovers.",
+      "ingredients": "Chocolate, Butter, Sugar, Flour, Eggs"
+    },
+    {
+      "id": 20,
+      "name": "Tiramisu",
+      "price": "5$",
+      "image": "./src/assets/images/cakes/tiramisu.jpg",
+      "quantity": 1,
+      "description": "A dense and fudgy chocolate dessert, perfect for chocolate lovers.",
+      "ingredients": "Chocolate, Butter, Sugar, Flour, Eggs"
+    },
+    {
+      "id": 21,
+      "name": "Unicorn cake",
+      "price": "5$",
+      "image": "./src/assets/images/cakes/unicorncake.jpg",
+      "quantity": 1,
+      "description": "A dense and fudgy chocolate dessert, perfect for chocolate lovers.",
+      "ingredients": "Chocolate, Butter, Sugar, Flour, Eggs"
+    },
+    {
+      "id": 22,
+      "name": "A little bit of cupcake",
+      "price": "5$",
+      "image": "./src/assets/images/cupcakes/Alittlebitofcupcake.jpg",
+      "quantity": 1,
+      "description": "A dense and fudgy chocolate dessert, perfect for chocolate lovers.",
+      "ingredients": "Chocolate, Butter, Sugar, Flour, Eggs"
+    },
+    {
+      "id": 23,
+      "name": "Meringue cupcake",
+      "price": "5$",
+      "image": "./src/assets/images/cupcakes/merinquecupcake.jpg",
+      "quantity": 1,
+      "description": "A dense and fudgy chocolate dessert, perfect for chocolate lovers.",
+      "ingredients": "Chocolate, Butter, Sugar, Flour, Eggs"
+    },
+    {
+      "id": 24,
+      "name": "Misletoe cupcake",
+      "price": "5$",
+      "image": "./src/assets/images/cupcakes/mistletoecupcake.jpg",
+      "quantity": 1,
+      "description": "A dense and fudgy chocolate dessert, perfect for chocolate lovers.",
+      "ingredients": "Chocolate, Butter, Sugar, Flour, Eggs"
+    },
+    {
+      "id": 25,
+      "name": "Peony flowers cupcake",
+      "price": "5$",
+      "image": "./src/assets/images/cupcakes/peonyflowerscupcakes.jpg",
+      "quantity": 1,
+      "description": "A dense and fudgy chocolate dessert, perfect for chocolate lovers.",
+      "ingredients": "Chocolate, Butter, Sugar, Flour, Eggs"
+    },    {
+      "id": 26,
+      "name": "Multicolor muffin",
+      "price": "5$",
+      "image": "./src/assets/images/cupcakes/multicolormuffins.jpg",
+      "quantity": 1,
+      "description": "A dense and fudgy chocolate dessert, perfect for chocolate lovers.",
+      "ingredients": "Chocolate, Butter, Sugar, Flour, Eggs"
+    },    {
+      "id": 27,
+      "name": "Red velvet muffin",
+      "price": "5$",
+      "image": "./src/assets/images/cupcakes/redvelvetmuffin.jpg",
+      "quantity": 1,
+      "description": "A dense and fudgy chocolate dessert, perfect for chocolate lovers.",
+      "ingredients": "Chocolate, Butter, Sugar, Flour, Eggs"
+    },    {
+      "id": 28,
+      "name": "Tropical cupcake",
+      "price": "5$",
+      "image": "./src/assets/images/cupcakes/tropicalcupcake.jpg",
+      "quantity": 1,
+      "description": "A dense and fudgy chocolate dessert, perfect for chocolate lovers.",
+      "ingredients": "Chocolate, Butter, Sugar, Flour, Eggs"
+    }
+
+  ],
+  "reviews": [
+    {
+      "id": 1,
+      "name": "Stuart",
+      "date": "07 jun",
+      "image": "./src/assets/images/cakes/rawveganchocolatecake.jpg",
+      "review": "The skilled pastry chefs tirelessly craft each treat with meticulous attention to detail, resulting in irresistible flavors and stunning presentation."
+   
+    },
+    {
+      "id": 2,
+      "name": "Michaela",
+      "date": "15 jun",
+      "image": "./src/assets/images/cakes/rawveganchocolatecake.jpg",
+      "review": "The skilled pastry chefs tirelessly craft each treat with meticulous attention to detail, resulting in irresistible flavors and stunning presentation."
+   
+    },
+    {
+      "id": 3,
+      "name": "Juno",
+      "date": "1 july",
+      "image": "./src/assets/images/cakes/rawveganchocolatecake.jpg",
+      "review": "The skilled pastry chefs tirelessly craft each treat with meticulous attention to detail, resulting in irresistible flavors and stunning presentation."
+   
+    }
+   ]
+}
+

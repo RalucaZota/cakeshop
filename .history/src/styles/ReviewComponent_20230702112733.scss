@@ -1,0 +1,54 @@
+.title{
+    font-size: 2rem;
+    position: absolute;
+    left: 12%;
+    margin-top: 20px;
+
+}
+.reviews {
+  border-top: 5px solid grey;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 11%;
+
+  .review-article {
+    max-width: 1200px;
+    margin-top: 20px;
+
+    & :first-child {
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 20px;
+    }
+    .review-details {
+      display: flex;
+      .review-image {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        border: 2px solid grey;
+      }
+      & h3 {
+        font-size: 1.5rem;
+        color: plum;
+   
+
+        & strong {
+            color: black;
+    
+        }
+      }
+      & p {
+        font-family: cursive;
+      }
+    }
+    .raiting-image {
+      width: 9rem;
+      height: 1.2rem;
+    }
+  }
+}

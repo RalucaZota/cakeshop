@@ -1,0 +1,14 @@
+.chef {
+    display: flex;
+  .chef-img-div {
+    border-radius: 50%;
+    border: 2px solid grey;
+    width: 180px;
+    height: 180px;
+    .chef-img {
+      width: 175px;
+      height: 175px;
+      border-radius: 50%;
+    }
+  }
+}

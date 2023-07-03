@@ -1,0 +1,9 @@
+.review-article{
+    max-width: 800px;
+    & h3{
+        font-size: 2rem;
+    }
+    .review-details{
+        display: flex;
+    }
+}

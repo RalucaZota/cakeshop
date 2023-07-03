@@ -1,0 +1,21 @@
+.review-article{
+    max-width: 800px;
+    & h3{
+        font-size: 2rem;
+    }
+    .review-details{
+        display: flex;
+        .review-image{
+            width: 100px;
+            height: 70px;
+            border-radius: 50%;
+
+        }
+        & h3 {
+            font-size: 1.5rem;
+        }
+        & p {
+            font-style: cursive;
+        }
+    }
+}

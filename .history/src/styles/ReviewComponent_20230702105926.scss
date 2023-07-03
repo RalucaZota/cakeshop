@@ -1,0 +1,39 @@
+.reviews {
+  border-top: 2px solid grey;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .review-article {
+    max-width: 1200px;
+   
+  & div{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+
+ }
+    .review-details {
+      display: flex;
+      .review-image {
+        width: 100px;
+        height: 70px;
+        border-radius: 50%;
+      }
+      & h3 {
+        font-size: 1.5rem;
+      }
+      & p {
+        font-family: cursive;
+      }
+    }
+    .raiting-image {
+      width: 9rem;
+      height: 1.2rem;
+    }
+  }
+}

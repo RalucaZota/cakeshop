@@ -1,0 +1,9 @@
+<template>
+    <div>
+        <div> 
+            <img/>
+        </div>
+        <h3>name</h3>
+        <p>status</p>
+    </div>
+</template>

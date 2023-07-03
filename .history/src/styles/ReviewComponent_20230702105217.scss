@@ -1,0 +1,30 @@
+.reviews {
+  border-top: 2px solid grey;
+  margin-top: 20px;
+
+  .review-article {
+    max-width: 800px;
+   
+ .review-article:first-child{
+    display: flex;
+ }
+    .review-details {
+      display: flex;
+      .review-image {
+        width: 100px;
+        height: 70px;
+        border-radius: 50%;
+      }
+      & h3 {
+        font-size: 1.5rem;
+      }
+      & p {
+        font-family: cursive;
+      }
+    }
+    .raiting-image {
+      width: 9rem;
+      height: 1.2rem;
+    }
+  }
+}
