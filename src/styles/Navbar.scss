@@ -83,20 +83,25 @@ header{
         }
    
         .active{
-        font-weight: bold;
-        font-size: 23px !important;
-        color: #371563;
-        font-weight: 700 !important;
-        text-decoration: none;
-        font-size: larger;
+            font-weight: bold;
+            font-size: 23px !important;
+            color: #371563;
+            font-weight: 700 !important;
+            text-decoration: none;
+            font-size: larger;
      
         }
         .cart{
-        position: absolute;
-        right: 3%;
-        color: black;
-        font-weight: 700;
-    }
+            width: 50px;
+            height: 50px;
+            border: 2px solid brown;
+            color: black;
+            font-weight: 700;
+            .hidden-box{
+                display: none;
+            }
+
+        }
         .navigation {
             display: flex;
             align-items: center;
@@ -166,6 +171,7 @@ header{
             transform: translateX((0));
         }
 
+
 }
 }
 .scrolled-nav{
@@ -180,5 +186,26 @@ header{
             // }
         }
     }
+}        
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-behavior: smooth;
+    scrollbar-width: 0 !important;
+    &.modal::-webkit-scrollbar {
+        display: none;
+        width: 0 !important;
+      }
+    &.modal > div {
+        background-color: white;
+        padding: 50px;
+        border-radius: 10px;
+        }
 }
-

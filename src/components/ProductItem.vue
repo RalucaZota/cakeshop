@@ -15,38 +15,26 @@
       </div>
     </article>
   </template>
-  <script>
+  <script setup>
   import axios from 'axios'
   import AddtoCartButton from './AddtoCartButton.vue'
-  export default {
-    name: 'FavoriteProduct',
-    components: {
-      AddtoCartButton
-    },
-    data(){
-    return {
-      products: []
-    }
-  },
-   async created() {
+  import { ref } from 'vue';
 
-    try {
-    const response = await axios.get('http://localhost:3000/desserts')
-    this.response = JSON.stringify(response.data)
-    this.products = response.data.slice(5, 10)
-        console.log(response.data)
-        console.log(this.products[0].image)
-      
-    } catch (error) {
-      console.error(error.message)
-    }
-  
-
-  }}
+const products = ref([]);
+(async () => {
+try {
+  const response = await axios.get('http://localhost:3000/desserts');
+  products.value = response.data.slice(5, 9);
+  console.log(response.data);
+  console.log(products.value[0].image);
+} catch (error) {
+  console.error(error.message);
+}
+})();
   
   </script>
   
   <style lang="scss">
-  @import '../styles/ProductItem.scss';
+  @import '../styles/Products/ProductItem.scss';
   </style>
   

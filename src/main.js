@@ -13,13 +13,11 @@ import { createVuetify } from 'vuetify'
 import * as components from 'vuetify/components'
 import * as directives from 'vuetify/directives';
 
-
 const vuetify = createVuetify({
     components,
     directives,
   })
 library.add(faBars, faXmark, faCartShopping)
-
 createApp(App)
 .component('font-awesome-icon', FontAwesomeIcon).use(router, vuetify)
 .mount('#app')

@@ -9,10 +9,8 @@
     </div>
   </div>
 </template>
-<script>
-export default {
-  name: 'universal card'
-}
+<script setup>
+
 </script>
 <style >
 @import '../styles/UniversalCard.scss';

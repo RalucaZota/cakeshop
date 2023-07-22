@@ -19,17 +19,10 @@
     </div>
   </div>
 </template> 
-<script>
+<script setup>
 import { chefs } from '../data'
-export default {
-  name: 'staff-component',
-  data() {
-    return {
-      chefs: chefs
-    }
-  }
-}
+
 </script>
 <style>
-@import '../styles/StaffComponent.scss';
+@import '../styles/AboutPage/StaffComponent.scss';
 </style>

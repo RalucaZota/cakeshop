@@ -20,7 +20,7 @@
   </Carousel>
 </template>
 
-<script>
+<script setup>
 import  ClientsInfo  from '../data.js'
 import { defineComponent } from 'vue'
 import { Carousel, Pagination, Slide } from 'vue3-carousel'
@@ -28,22 +28,8 @@ import { Carousel, Pagination, Slide } from 'vue3-carousel'
 import 'vue3-carousel/dist/carousel.css'
 import ProductItem from './ProductItem.vue';
 
-export default defineComponent({
-  name: 'Autoplay',
-  components: {
-    Carousel,
-    Slide,
-    Pagination,
-    ProductItem
-  },
-  data() {
-    return {
-      ClientsInfo: ClientsInfo
 
-    }
-  },
-})
 </script>
 <style scoped>
-@import '../styles/Testimonials.scss';
+@import '../styles/HomePage/Testimonials.scss';
 </style>
