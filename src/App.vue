@@ -5,11 +5,14 @@ import Navbar from "./components/Navbar.vue"
 </script>
 
 <template>
-<navbar/>
+    <div class="app"> 
+
+        <navbar/>
+    </div>
 
 
 </template>
 
-<style scoped>
-
+<style >
+@import './styles/AppStyle.scss';
 </style>

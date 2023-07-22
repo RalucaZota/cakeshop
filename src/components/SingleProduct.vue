@@ -38,46 +38,32 @@
     </div>
   </article>
 </template>
-<script>
+<script setup>
 
 import AddtoCartButton from './AddtoCartButton.vue'
 import axios from 'axios'
 import vuePhotoZoomPro from 'vue-photo-zoom-pro'
 import 'vue-photo-zoom-pro/dist/style/vue-photo-zoom-pro.css'
+import { ref } from 'vue';
 
-export default {
-  name: 'single-product',
-  components: {
-    AddtoCartButton,
-    vuePhotoZoomPro
+const singleProduct = ref([]);
 
-  },
-  data() {
-    return {
-      singleProduct: {},
-      value: 1
-    }
-  },
-  methods: {
-    
-  },
-
-  async created() {
-    try {
+(async () => {
+try {
       const response = await axios.get('http://localhost:3000/desserts', {
         params: {
           _limit: 1
         }
       })
-      this.response = JSON.stringify(response.data)
-      this.singleProduct = response.data
+      response.value = JSON.stringify(response.data)
+      singleProduct.value = response.data
       console.log(response.data)
     } catch (error) {
       console.error(error.message)
     }
-  }
-}
+  
+})();
 </script>
 <style lang="scss">
-@import '../styles/SingleProduct.scss';
+@import '../styles/Products/SingleProduct.scss';
 </style>

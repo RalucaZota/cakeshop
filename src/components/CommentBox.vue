@@ -8,17 +8,10 @@
     </div>
 
 </template>
-<script>
+<script setup>
 import { CommentBox } from '../data.js'
-export default {
-  name: 'comment-box',
-  data() {
-    return {
-      CommentBox: CommentBox
-    }
-  }
-}
+
 </script>
 <style scoped>
-@import '../styles/CommentBox.scss';
+@import '../styles/AboutPage/CommentBox.scss';
 </style>

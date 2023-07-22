@@ -23,97 +23,29 @@
    
 
 </template>
-<script>
-import AddtoCartButton from './AddtoCartButton.vue'
-import axios from 'axios'
-import { defineComponent } from 'vue'
-import { Carousel, Pagination, Slide } from 'vue3-carousel'
-import 'vue3-carousel/dist/carousel.css'
-export default {
-  name: 'FavoriteProduct',
-  components: {
-    AddtoCartButton,
-    Carousel,
-    Slide,
-    Pagination,
+<script setup>
+import AddtoCartButton from './AddtoCartButton.vue';
+import axios from 'axios';
+import { defineComponent } from 'vue';
+import { Carousel, Pagination, Slide } from 'vue3-carousel';
+import 'vue3-carousel/dist/carousel.css';
+import { ref } from 'vue';
 
-  },
-  data(){
-    return {
-      products: []
-    }
-  },
-   async created() {
-
-    try {
-    const response = await axios.get('http://localhost:3000/desserts')
-    this.response = JSON.stringify(response.data)
-    this.products = response.data.slice(5, 9)
-        console.log(response.data)
-        console.log(this.products[0].image)
-      
-    } catch (error) {
-      console.error(error.message)
-    }
-  
-
-  }}
+  const products = ref([]);
+  (async () => {
+  try {
+    const response = await axios.get('http://localhost:3000/desserts');
+    products.value = response.data.slice(5, 9);
+    console.log(response.data);
+    console.log(products.value[0].image);
+  } catch (error) {
+    console.error(error.message);
+  }
+})();
 
 </script>
 
 <style lang="scss">
-@import '../styles/FavoriteProduct.scss';
+@import '../styles/HomePage/FavoriteProduct.scss';
 
-.carousel{
-  margin-top: 150px;
-  height: 500px;
-  width: 80%;
-  margin: 0 auto;
- 
-}
-.carousel__item {
-  background: red;
-}
-.carousel__slide {
-  padding: 5px;
-}
-
-.carousel__viewport {
-  perspective: 2000px;
-}
-
-.carousel__track {
-  transform-style: preserve-3d;
-}
-
-.carousel__slide--sliding {
-  transition: 0.5s;
-}
-
-.carousel__slide {
-  opacity: 0.9;
-  transform: rotateY(-20deg) scale(0.9);
-}
-
-.carousel__slide--active ~ .carousel__slide {
-  transform: rotateY(20deg) scale(0.9);
-}
-
-.carousel__slide--prev {
-  opacity: 1;
-  transform: rotateY(-10deg) scale(0.95);
-}
-
-.carousel__slide--next {
-  opacity: 1;
-  transform: rotateY(10deg) scale(0.95);
-}
-
-.carousel__slide--active {
-  opacity: 1;
-  transform: rotateY(0) scale(1.1);
-  // transform: rotateY(0) scale(1.1);
-  // -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 25px 9px -12px rgba(0,0,0,0.2); 
-  //   box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 25px 9px -12px rgba(0,0,0,0.2);
-}
 </style>

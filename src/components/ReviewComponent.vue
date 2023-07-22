@@ -21,29 +21,21 @@
     </article>
   </div>
 </template>
-<script>
+<script setup>
 import axios from 'axios'
-export default {
-  name: 'review-component',
-
-  data() {
-    return {
-      reviewComponent: {}
-    }
-  },
-
-  async created() {
-    try {
+import { ref } from 'vue';
+const reviewComponent= ref([]);
+(async () => {
+try {
       const response = await axios.get('http://localhost:3000/reviews')
-      this.response = JSON.stringify(response.data)
-      this.reviewComponent = response.data
-      console.log(response.data)
+      response.value = JSON.stringify(response.data)
+      reviewComponent.value = response.data
+      console.log(response.value.data)
     } catch (error) {
       console.error(error.message)
     }
-  }
-}
+  })();
 </script>
 <style scoped>
-@import '../styles/ReviewComponent.scss';
+@import '../styles/Products/ReviewComponent.scss';
 </style>
