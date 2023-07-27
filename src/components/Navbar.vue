@@ -95,7 +95,6 @@
 <script setup>
 import { onMounted, onBeforeUnmount, ref, watch, reactive } from 'vue';
 import { RouterLink, RouterView } from 'vue-router';
-import { emitter } from '../EmitterEvents';
 import Home from '../views/Home.vue';
 import Products from '../views/Products.vue';
 import About from '../views/About.vue';
@@ -151,6 +150,9 @@ const openMobileNav = () => {
 const closeMobileNav = () => {
   mobileNav.value = false;
 };
+const closeModal = () => {
+  isOpen.value = false;
+}
 
 onMounted(() => {
   window.addEventListener('scroll', updateScroll);
