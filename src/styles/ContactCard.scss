@@ -1,0 +1,43 @@
+.contact-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  .contact-card {
+    border: 5px solid palevioletred;
+    width: 300px;
+    height: 200px;
+    border-radius: 25px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    &:hover{
+        border-color: red;
+        transition: all .3s linear;
+    }
+
+  }
+
+  .contact-icon {
+    display: flex;
+    align-items: center;
+    background-color: pink;
+    border-radius: 5px;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    &:hover{
+        background-color: antiquewhite;
+        transition: all .3s linear;
+        border: 3px solid black;
+        transition: all .3s linear;
+        transform: scale(1.5);
+        margin-bottom: 20px;
+  }
+}
+}
