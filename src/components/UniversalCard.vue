@@ -1,8 +1,8 @@
 <template>
-  <div class="universal-card">
-    <div class="universal-card-img">
+  <div >
+
       <slot name="img"> </slot>
-    </div>
+   
     <div class="universal-card-details">
       <slot name="title"> </slot>
       <slot name="text"> </slot>

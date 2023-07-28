@@ -2,7 +2,7 @@
   <div>
     <h1>About</h1>
     <div  class='universal-card-wrapper' > 
-        <universal-card v-for="( momentInfo, id) in momentsInfo" :key="id" >
+        <universal-card v-for="( momentInfo, id) in momentsInfo" :key="id" style="background-color: wheat;">
           <template #img >
           <img :src="momentInfo.img"/></template>
           <template #title >
