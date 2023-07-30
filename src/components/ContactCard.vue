@@ -10,7 +10,7 @@
           <font-awesome-icon :icon="icon" size="xl" /></div
       ></template>
       <template #title
-        ><p style="font-size: 30px">{{ title }}</p></template
+        ><p >{{ title }}</p></template
       >
       <template #text> {{ text }}</template>
     </universal-card>
