@@ -1,3 +1,12 @@
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+}
 .title {
   display: flex;
   justify-content: center;
@@ -16,6 +25,10 @@
     background-color: antiquewhite;
     font-weight: 600;
     transition: all 0.6s ease-in;
+  }
+  &:disabled{
+    background-color: antiquewhite;
+    color: red;
   }
 }
 .message {
@@ -42,3 +55,15 @@
     font-weight: 600;
   }
 }
+.error-wrapper{
+  width: 400px;
+}
+  p{
+    font-size: 11px;
+    color: red;
+    font-weight: 500;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0px 8px
+}
+
