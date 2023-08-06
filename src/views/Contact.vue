@@ -4,35 +4,57 @@
     <contact-card />
     <form @submit.prevent="submitDetails">
       <h3 class="title">Contact form</h3>
-      <contact-form v-model="state.firstName" type="text" label="FirstName" @blur="v$.firstName.$touch" />
-      <span v-for="error in v$.firstName.$errors" :key="error.$uid">
-        {{ error.$property }} - {{ error.$message }}
-      </span>
-      <contact-form v-model="state.lastName" type="text" label="LastName" @blur="v$.lastName.$touch" />
-      <p v-for="error in v$.lastName.$errors" :key="error.$uid">
-        {{ error.$property }} - {{ error.$message }}
-      </p>
-
-      <contact-form v-model="state.phoneNumber" label="Phone Number" @blur="v$.phoneNumber.$touch"/>
-      <p v-for="error in v$.phoneNumber.$errors" :key="error.$uid">
-        {{ error.$property }} - The value must be a number!
-      </p>
-
-      <textarea v-model="state.message" placeholder="Message" class="message" @blur="v$.message.$touch"></textarea>
-      <p v-for="error in v$.message.$errors" :key="error.$uid">
-        {{ error.$property }} - {{ error.$message }}
-      </p>
-
-      <button class="submit-button" type="submit" :disabled="v$.$errors">SUBMIT</button>
-      <div>
-        <p v-if="contactInfoList.length > 0">{{ successMessage }}</p>
+      <contact-form
+        v-model.trim.capitalize="state.firstName"
+        type="text"
+        label="FirstName"
+        @blur="v$.firstName.$touch"
+      />
+      <div class="error-wrapper">
+        <p v-for="error in v$.firstName.$errors" :key="error.$uid">
+          {{ error.$message }}
+        </p>
       </div>
-      <div v-for="(contact, index) in contactInfoList" :key="index">
-        <p>{{ contact.firstName }}</p>
-        <p>{{ contact.lastName }}</p>
-        <p>{{ contact.message }}</p>
-        <p>{{ contact.phoneNumber }}</p>
+      <contact-form
+        v-model.trim.capitalize="state.lastName"
+        type="text"
+        label="LastName"
+        @blur="v$.lastName.$touch"
+      />
+      <div class="error-wrapper">
+        <p v-for="error in v$.lastName.$errors" :key="error.$uid">
+          {{ error.$message }}
+        </p>
       </div>
+
+      <contact-form
+        v-model.trim="state.phoneNumber"
+        label="Phone Number"
+        @blur="v$.phoneNumber.$touch"
+      />
+      <div class="error-wrapper">
+        <p v-for="error in v$.phoneNumber.$errors" :key="error.$uid">
+          The value must be a number!
+          {{ error.$message }}
+        </p>
+      </div>
+
+      <textarea
+        v-model.trim="state.message"
+        placeholder="Message"
+        class="message"
+        @blur="v$.message.$touch"
+        @input="capitalizeFirstLetter"
+      ></textarea>
+      <div class="error-wrapper">
+        <p v-for="error in v$.message.$errors" :key="error.$uid">
+         
+          {{ error.$message }}
+        </p>
+      </div>
+
+      <button class="submit-button" type="submit">SUBMIT</button>
+
     </form>
   </div>
 </template>
@@ -66,12 +88,12 @@ function validName(name) {
 const rules = computed(() => {
   return {
     firstName: {
-      required:helpers.withMessage('Firstname is required!', required),
+      required: helpers.withMessage('Firstname is required!', required),
       $autoDirty: true,
       minLength: minLength(3),
       name_validation: {
         $validator: validName,
-        $message: 'Invalid Name. Valid name only contain letters, dashes (-) and spaces'
+        $message: 'Invalid Name. Valid name only contains letters, dashes (-) and spaces'
       }
     },
     lastName: {
@@ -80,7 +102,7 @@ const rules = computed(() => {
       minLength: minLength(3),
       name_validation: {
         $validator: validName,
-        $message: 'Invalid Name. Valid name only contain letters, dashes (-) and spaces'
+        $message: 'Invalid Name. Valid name only contains letters, dashes (-) and spaces'
       }
     },
     phoneNumber: { required, minLength: minLength(10), numeric, $autoDirty: true },
@@ -88,11 +110,7 @@ const rules = computed(() => {
   }
 })
 
-
 const v$ = useValidate(rules, state)
-
-
-
 
 const submitDetails = async () => {
   const result = await v$.value.$validate()
@@ -119,28 +137,11 @@ const submitDetails = async () => {
   }
 }
 
-const fetchData = async () => {
-  try {
-    const response = await axios.get(
-      'https://cakeshop-7a1db-default-rtdb.firebaseio.com/contactDetails.json'
-    )
-    contactInfo.value = response.data
-    console.log(contactInfo.value)
-    contactInfoList.value = Object.values(contactInfo.value)
-    console.log(contactInfoList.value)
-
-    if (response.status === 200 && contactInfoList.value.length > 0) {
-      document.querySelector('form').reset()
-      successMessage.value = 'we did it'
-    } else {
-      successMessage.value = 'some error occured'
-    }
-  } catch (error) {
-    console.error('Eroare la cererea GET:', error)
+const capitalizeFirstLetter = () => {
+  if (state.message) {
+    state.message = state.message.charAt(0).toUpperCase() + state.message.slice(1)
   }
 }
-
-fetchData()
 </script>
 <style>
 @import '../styles/ContactPage/ContactPage.scss';
